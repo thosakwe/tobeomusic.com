@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tobë</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <style>
+    .column img {
+      height: 15em;
+      width: auto;
+    }
+
+    .hero {
+      background: #121212;
+      color: #fff;
+    }
+
+    .hero img {
+      border-radius: 4px;
+      box-shadow: 0 0 4px rgba(255, 255, 255, 0.2);
+    }
+
+    .hero *, .navbar-end .navbar-item {
+      color: #fff;
+    }
+
+    .navbar-menu {
+      background: transparent;
+    }
+
+    .navbar-menu:not(.is-active) .social-desc {
+      display: none;
+    }
+
+    .social-desc {
+      margin-left: 0.5em;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="hero is-fullheight">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+          <img src="blue.jpeg" style="height: 3em; width: auto; border-radius: 50%;">
+          &nbsp;&nbsp;Tobë
+        </a>
+        <a href="#about" class="navbar-item">
+          ABOUT
+        </a>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+          data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div class="navbar-menu">
+        <div class="navbar-start">
+        </div>
+        <div class="navbar-end">
+          <a class="navbar-item"
+            href="https://open.spotify.com/artist/2iE2GSVTBxqySsQvqA1cG7?si=0DQrFZEyQfW6kAq28L683Q">
+            <i class="fab fa-spotify"></i>
+            <span class="social-desc">Spotify</span>
+          </a>
+          <a class="navbar-item" href="https://instagram.com/tobeomusic">
+            <i class="fab fa-instagram"></i>
+            <span class="social-desc">Instagram</span>
+          </a>
+          <a class="navbar-item" href="https://twitter.com/tobeomusic">
+            <i class="fab fa-twitter"></i>
+            <span class="social-desc">Twitter</span>
+          </a>
+          <a class="navbar-item" href="mailto:music@thosakwe.com">
+            <i class="fas fa-envelope"></i>
+            <span class="social-desc">Email</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-vcentered">
+          <div class="column">
+            <img src="24.png" alt="#24" style="height: 25em; width: auto">
+          </div>
+          <div class="column">
+            <h1 class="title">
+              "#24" out now.
+            </h1>
+            <h2 class="subtitle">
+              A tribute to Kobe Bryant, a legendary icon who, along with his daughter, Gianna, unfortunately passed in a
+              tragic accident on January 26th, 2020...
+            </h2>
+            <a class="button is-medium is-primary is-inverted is-outlined"
+              href="https://open.spotify.com/track/3sCHr2yuvF02wVUXo4r6lj?si=uTLtL_8wT02bSHkhgIQyEg">
+              <i class="fab fa-spotify"></i>
+              &nbsp;&nbsp;Listen Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="section">
+    <div class="container">
+      <h1 class="title">
+        Who is Tobë?
+      </h1>
+      <div class="columns is-vcentered">
+        <div class="column is-one-quarter">
+          <img src="ssss.jpeg" alt="Synths, Sounds, and Sweet Serenity">
+        </div>
+        <div class="column">
+          <p>
+            Born in Nigeria in 1999, Tobë's family moved to the United States before
+            he could even read. He started with music at an early age, beginning with
+            singing at school and playing piano at home, and eventually joined his middle
+            school band. It wasn't until 2017, however, that he released his first independent
+            EP, "Game of Love."
+          </p>
+          <br>
+          </p>
+          After a long hiatus spent learning music production and audio engineering, Tobë
+          returned in late 2019 with his second EP, "Synths, Sounds, and Sweet Serenity."
+          </p>
+          <br>
+          </p>
+          Tobë plays 5 instruments, sings, and produces his own music from start to finish. He
+          cites Stevie Wonder, Prince, Michael Jackson, and Anderson .Paak as his biggest musical
+          influences.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script>
+    $(function () {
+      $(".navbar-burger").click(function () {
+        $(".navbar-burger").toggleClass("is-active");
+        $(".navbar-menu").toggleClass("is-active");
+      });
+    });
+  </script>
+</body>
+
+</html>
